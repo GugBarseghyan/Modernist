@@ -1,0 +1,209 @@
+*{box-sizing: border-box;}
+body{
+    margin: 0;
+    border-top: 5px solid #76C38F;
+    background: url(../img/1373042.jpg) fixed;
+}
+/*-------------- Logo ------------------------*/
+header p{
+    font-size: 40px;
+    color: white;
+    margin: 0px 0px -10px 0px;
+}
+header p:nth-child(2){
+    font-size: 18px;
+    opacity: 0.7;
+}
+/*--------------- Slide --------------------*/
+.slide{
+    padding: 50px 200px;
+    width: 100%;
+    height: 100vh;
+    background-color: #0009;
+}
+.slide .objects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.slide .objects img{
+    width: 45%;
+    border-radius: 50%;
+    border: 10px solid #1f1f1f;
+    margin: 20px;
+}
+.sleck{
+    font-size: 100px;
+    color: #76C38F;
+    margin: 40px;
+}
+.slide .objects div{
+    width: 40%;
+    margin: 20px
+}
+.slide .objects div h1{
+    font-size: 70px;
+}
+.btn{
+    cursor: pointer;
+    background-color: #76C38F;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+}
+.btn:hover{
+    background-color: #539468;
+}
+.slide .objects div p{
+    opacity: 0.7;
+    font-size: 20px
+}
+/*------------------ Icons selection --------------------*/
+.icons{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+.icons .object{
+    display: inline-block;
+    width: 300px;
+    background-color: white;
+    padding: 20px 30px;
+    text-align: center;
+    margin: 20px;
+    transition: 0.4s;
+}
+.icons .object:hover{
+    background-color: #76C38F;
+    color: white
+}
+.icons .object:hover i{ color: white; }
+.icons .object:hover h1{ color: white; }
+.icons .object i{
+    font-size: 130px;
+    color: #343434;
+}
+.icons .object h1{
+    text-transform: uppercase;
+    color: #343434;
+    font-size: 40px;
+}
+.icons .object p{
+    opacity: 0.7;
+}
+/*-------------------- Portfolio -------------------*/
+.potfolio{
+    text-align: center;
+    width: 100%;
+    padding-top: 100px;
+}
+.potfolio h1{
+    display: inline;
+    color: white;
+    text-transform: uppercase;
+    background-color: #303030;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 100;
+}
+.potfolio hr{
+    background-color: #303030;
+    border: 2px solid #303030;
+    margin-top: -20px;
+    width: 80%;
+}
+.portfolio{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio .object{
+    width: 400px;
+    height: 250px;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    border: 10px solid white;
+    margin: 20px 50px;
+    transition: 0.4s;
+}
+.portfolio .object:hover{border-color: #76C38F;}
+.portfolio .object:hover h2{visibility: hidden;}
+.portfolio .object h2{
+    color: white;
+    width: 100%;
+    padding: 10px;
+    background-color: #0008;
+    margin-bottom: 0px;
+}
+.portfolio .object:nth-child(1){ background: url(../img/pic\ 1.jpg); background-size: 100%; }
+.portfolio .object:nth-child(2){ background: url(../img/pic\ 2.jpg); background-size: 100%; }
+.portfolio .object:nth-child(3){ background: url(../img/pic\ 3.jpg); background-size: 100%; }
+.portfolio .object:nth-child(4){ background: url(../img/pic\ 4.jpg); background-size: 100%; }
+.portfolio .object:nth-child(5){ background: url(../img/pic\ 5.jpg); background-size: 100%; }
+.portfolio .object:nth-child(6){ background: url(../img/pic\ 6.jpg); background-size: 100%; }
+/*--------------- Footer --------------------*/
+footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #313131;
+    padding: 30px 100px;
+    margin-top: 50px;
+}
+footer .object{
+    color: white;
+    width: 300px;
+}
+footer .object h1{
+    color: #76C38F;
+}
+footer .object input{
+    border-radius: 8px;
+    background-color: #000;
+    padding: 8px 10px;
+    border: none;
+    margin: 3px;
+    width: 100%;
+}
+footer .object p{
+    line-height: 25px;
+    font-size: 17px;
+    opacity: 0.7;
+}
+.footer{
+    background-color: #202020;
+    border-top: 2px solid black;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+}
+@media only screen and (max-width: 1500px){
+    .slide .objects{
+        flex-wrap: wrap;
+    }
+    .slide .objects div{
+        width: 100%; }
+    .sleck{ display: none; }
+}
+@media only screen and (max-width: 1000px){
+    .slide{
+        padding: 20px;
+        text-align: center;
+    }
+    .slide .objects div h1{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .slide .objects img{
+        width: 60%;
+        order: 1;
+    }
+    .slide .objects div{order: 2;}
+}
