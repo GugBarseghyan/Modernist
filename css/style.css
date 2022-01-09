@@ -18,7 +18,6 @@ header p:nth-child(2){
 .slide{
     padding: 50px 200px;
     width: 100%;
-    height: 100vh;
     background-color: #0009;
 }
 .slide .objects{
@@ -184,11 +183,8 @@ footer .object p{
     padding: 20px;
 }
 @media only screen and (max-width: 1500px){
-    .slide .objects{
-        flex-wrap: wrap;
-    }
-    .slide .objects div{
-        width: 100%; }
+    .slide .objects{ flex-wrap: wrap; }
+    .slide .objects div{ width: 100%; }
     .sleck{ display: none; }
 }
 @media only screen and (max-width: 1000px){
@@ -196,13 +192,11 @@ footer .object p{
         padding: 20px;
         text-align: center;
     }
-    .slide .objects div h1{
-        font-size: 50px;
-    }
+    .slide .objects div h1{ font-size: 50px; }
 }
 @media only screen and (max-width: 800px){
     .slide .objects img{
-        width: 60%;
+        width: 50%;
         order: 1;
     }
     .slide .objects div{order: 2;}
